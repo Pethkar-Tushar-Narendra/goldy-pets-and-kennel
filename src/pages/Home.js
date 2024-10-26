@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import Navbar from "./Navbar"
 
 export default function Home() {
   const [dogs, setDogs] = useState([])
@@ -49,9 +50,11 @@ export default function Home() {
       ) : (
         <>
           <section className="p-8 max-w-7xl mx-auto">
+
+      {/* <Navbar/> */}
             <div className="text-center">
               <h1 className="pb-8 flex items-center justify-center text-center px-5 text-3xl font-bold lg:text-5xl text-white">
-                Goldy Pets And Kennel
+                Goldy Pet Marts And Kennels
               </h1>
 
               <form
@@ -120,13 +123,19 @@ export default function Home() {
               )}
             </div>
 
-            <p className="my-8 text-white">
+            <p className="my-8 text-white gap-5 flex">
                 This application is powered by{" "}
                 <a
                   href="https://thedogapi.com"
                   className="text-indigo-600 underline active:text-orange-400"
                 >
                   The Dog Api
+                </a>
+                <a
+                  href="https://thedogapi.com"
+                  className="text-indigo-600 underline active:text-orange-400"
+                >
+                  The Cat Api
                 </a>
               </p>
           </section>
