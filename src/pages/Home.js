@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import Navbar from "./Navbar"
+// import Navbar from "./Navbar"
 
 export default function Home() {
   const [dogs, setDogs] = useState([])
