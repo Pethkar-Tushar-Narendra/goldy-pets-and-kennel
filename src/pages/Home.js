@@ -10,7 +10,7 @@ export default function Home({pet,setPet}) {
   useEffect(() => {
     const fetchDogData = async () => {
       try {
-        const res = await fetch("https://api.thedogapi.com/v1/breeds")
+        const res = await fetch("https://api.thedogapi.com/v1/breeds/9")
         const data = await res.json()
         setDogs(data)
       } catch (error) {
@@ -44,7 +44,7 @@ export default function Home({pet,setPet}) {
   return (
     <>
       {!dogs ? (
-        <h1 className="flex items-center justify-center text-white text-center px-5 text-3xl h-screen font-bold uppercase">
+        <h1 className="flex items-center justify-center text-white text-center px-5 text-3xl h-screen font-bold uppercase text-white">
           Loading...
         </h1>
       ) : (
