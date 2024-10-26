@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-// import Navbar from "./Navbar"
+import Navbar from "./Navbar"
 
-export default function Home() {
+export default function Home({pet,setPet}) {
   const [dogs, setDogs] = useState([])
   const [text, setText] = useState("")
   const [searched, setSearched] = useState(false)
@@ -51,7 +51,7 @@ export default function Home() {
         <>
           <section className="p-8 max-w-7xl mx-auto">
 
-      {/* <Navbar/> */}
+      <Navbar pet={pet} setPet={setPet}/>
             <div className="text-center">
               <h1 className="pb-8 flex items-center justify-center text-center px-5 text-3xl font-bold lg:text-5xl text-white">
                 Goldy Pet Marts And Kennels
@@ -131,12 +131,12 @@ export default function Home() {
                 >
                   The Dog Api
                 </a>
-                <a
+                {/* <a
                   href="https://thedogapi.com"
                   className="text-indigo-600 underline active:text-orange-400"
                 >
                   The Cat Api
-                </a>
+                </a> */}
               </p>
           </section>
         </>
