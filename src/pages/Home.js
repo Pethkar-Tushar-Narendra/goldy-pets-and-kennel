@@ -10,7 +10,7 @@ export default function Home({pet,setPet}) {
   useEffect(() => {
     const fetchDogData = async () => {
       try {
-        const res = await fetch("https://api.thedogapi.com/v1/breeds")
+        const res = await fetch("https://api.thedogapi.com/v1/breeds/9")
         const data = await res.json()
         setDogs(data)
       } catch (error) {
