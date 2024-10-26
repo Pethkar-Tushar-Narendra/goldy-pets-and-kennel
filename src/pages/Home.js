@@ -51,7 +51,7 @@ export default function Home({pet,setPet}) {
         <>
           <section className="p-8 max-w-7xl mx-auto">
 
-      <Navbar pet={pet} setPet={setPet}/>
+      {/* <Navbar pet={pet} setPet={setPet}/> */}
             <div className="text-center">
               <h1 className="pb-8 flex items-center justify-center text-center px-5 text-3xl font-bold lg:text-5xl text-white">
                 Goldy Pet Marts And Kennels
