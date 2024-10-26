@@ -12,8 +12,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home pet={pet} setPet={setPet}/>}></Route>
-          <Route path="/dog/:name" element={<SingleDog />}></Route>
-          <Route path="/cat/:name" element={<SingleCat />}></Route>
+          <Route path="/:name" element={<SingleDog />}></Route>
+          <Route path="/cat/h:name" element={<SingleCat />}></Route>
         </Routes>
       </BrowserRouter>
     </>
